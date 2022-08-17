@@ -91,7 +91,7 @@ public class UserEntity implements UserDetails {
             roles.add(new SimpleGrantedAuthority(role.getName()));
         }
         return roles;
-    } //TODO:: A futuro controlar que el return no de conflictos
+    }
 
     @Override
     public String getPassword() {

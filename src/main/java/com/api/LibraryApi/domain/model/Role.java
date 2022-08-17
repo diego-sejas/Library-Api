@@ -22,7 +22,7 @@ public class Role implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name can not be emtpy")
+    @NotBlank(message = "Name can not be empty")
     @Column(name = "name", length = 40, nullable = false)
     private String name;
 
