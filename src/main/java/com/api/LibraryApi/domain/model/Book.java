@@ -56,6 +56,10 @@ public class Book implements Serializable {
     @Column(name = "edition_date")
     private LocalDate returnDate;
 
+    @NotNull(message = "Image URL is required")
+    @Column(name = "image")
+    private String image;
+
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime createDateTime;
