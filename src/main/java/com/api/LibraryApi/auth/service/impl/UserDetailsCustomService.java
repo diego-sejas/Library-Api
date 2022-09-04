@@ -1,6 +1,5 @@
 package com.api.LibraryApi.auth.service.impl;
 
-
 import com.api.LibraryApi.auth.config.SecurityConfiguration;
 import com.api.LibraryApi.auth.dto.AuthenticationRequest;
 import com.api.LibraryApi.auth.dto.AuthenticationResponse;
@@ -23,6 +22,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -32,10 +32,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class UserDetailsCustomService implements UserDetailsService {

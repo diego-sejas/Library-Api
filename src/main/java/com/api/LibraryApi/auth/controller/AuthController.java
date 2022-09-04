@@ -1,5 +1,6 @@
 package com.api.LibraryApi.auth.controller;
 
+
 import com.api.LibraryApi.auth.dto.AuthenticationRequest;
 import com.api.LibraryApi.auth.dto.AuthenticationResponse;
 import com.api.LibraryApi.auth.dto.UserRequestDto;
@@ -31,7 +32,6 @@ public class AuthController {
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
     }
-
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> userRegistration(@Valid @RequestBody UserRequestDto userRequestDto, BindingResult bindingResult) throws Exception {
         if (bindingResult.hasErrors()) {
