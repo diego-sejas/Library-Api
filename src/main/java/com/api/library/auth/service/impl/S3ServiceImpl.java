@@ -2,7 +2,6 @@ package com.api.library.auth.service.impl;
 
 import com.api.library.auth.model.vm.Asset;
 import com.api.library.auth.service.IS3Service;
-import com.api.library.dto.Base64ImageDTO;
 import com.api.library.exception.ConflictException;
 import com.api.library.exception.NotFoundException;
 import com.amazonaws.services.s3.AmazonS3;

@@ -2,11 +2,7 @@ package com.api.library.controller;
 
 
 import com.api.library.domain.model.Organization;
-import com.api.library.domain.service.IOrganizationService;
-import com.api.library.domain.service.ISlideService;
 import com.api.library.domain.util.Url;
-import com.api.library.dto.OrganizationDTO;
-import com.api.library.dto.OrganizationUpdateDTO;
 import com.api.library.exception.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

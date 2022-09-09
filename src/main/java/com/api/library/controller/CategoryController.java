@@ -1,11 +1,8 @@
 package com.api.library.controller;
 
 import com.api.library.domain.util.Url;
-import com.api.library.dto.CategoryDTO;
-import com.api.library.dto.CategoryDtoName;
 import com.api.library.dto.PageDTO;
 import com.api.library.exception.BadRequestException;
-import com.api.library.domain.service.ICategoryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

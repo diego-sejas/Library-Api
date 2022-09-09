@@ -1,9 +1,7 @@
 package com.api.library.controller;
 
 import com.api.library.domain.util.Url;
-import com.api.library.dto.ActivityDTO;
 import com.api.library.exception.BadRequestException;
-import com.api.library.domain.service.IActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

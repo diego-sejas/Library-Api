@@ -1,9 +1,7 @@
 package com.api.library.controller;
 
 import com.api.library.domain.util.Url;
-import com.api.library.dto.TestimonialDTO;
 import com.api.library.exception.BadRequestException;
-import com.api.library.domain.service.ITestimonialService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
