@@ -1,7 +1,5 @@
 package com.api.library.controller;
 
-import com.api.library.dto.ApiErrorDTO;
-
 import com.api.library.exception.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
