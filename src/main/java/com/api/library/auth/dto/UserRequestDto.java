@@ -1,10 +1,10 @@
 package com.api.library.auth.dto;
 
+import com.api.library.domain.model.Role;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-import com.api.library.domain.model.Role;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;

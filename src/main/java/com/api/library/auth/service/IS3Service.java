@@ -1,6 +1,7 @@
 package com.api.library.auth.service;
 
 import com.api.library.auth.model.vm.Asset;
+import com.api.library.dto.Base64ImageDTO;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;

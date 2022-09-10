@@ -3,11 +3,10 @@ package com.api.library.domain.service.impl;
 import com.api.library.auth.dto.UserResponseDto;
 import com.api.library.auth.dto.UserUpdateDto;
 import com.api.library.auth.repository.UserRepository;
-import com.api.library.domain.model.UserEntity;
 import com.api.library.domain.service.IUserService;
 import com.api.library.exception.NotFoundException;
 import com.api.library.mapper.UserMapper;
-
+import com.api.library.domain.model.UserEntity;
 import com.amazonaws.services.sns.model.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

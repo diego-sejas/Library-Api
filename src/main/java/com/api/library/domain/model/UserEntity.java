@@ -1,5 +1,14 @@
 package com.api.library.domain.model;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -10,14 +19,6 @@ import org.springframework.lang.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
-import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Getter
@@ -91,7 +92,7 @@ public class UserEntity implements UserDetails {
             roles.add(new SimpleGrantedAuthority(role.getName()));
         }
         return roles;
-    }
+    } //TODO:: A futuro controlar que el return no de conflictos
 
     @Override
     public String getPassword() {

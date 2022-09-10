@@ -1,8 +1,10 @@
 package com.api.library.controller;
 
 import com.api.library.H2Config;
+import com.api.library.domain.service.IMemberService;
 import com.api.library.domain.util.JsonUtils;
 import com.api.library.domain.util.Url;
+import com.api.library.dto.MemberDTO;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,7 @@ import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.Arrays;
 import java.util.List;
@@ -58,7 +61,7 @@ class MemberControllerIT {
     void createMembers_shouldReturn201() throws Exception {
         given(service.addMember(any(MemberDTO.class))).willAnswer((invocation) -> invocation.getArgument(0));
 
-        this.mockMvc.perform(post(Url.MEMBERS_URI)
+        this.mockMvc.perform(MockMvcRequestBuilders.post(Url.MEMBERS_URI)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(JsonUtils.objectToJson(request)))
                 .andExpect(status().isCreated())

@@ -1,10 +1,9 @@
 package com.api.library.dataseed;
 
 import com.api.library.auth.repository.UserRepository;
+import com.api.library.enums.RolName;
 import com.api.library.domain.model.Role;
 import com.api.library.domain.model.UserEntity;
-import com.api.library.enums.RolName;
-
 import com.api.library.domain.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

@@ -5,8 +5,8 @@ import com.api.library.dto.ContactDTO;
 import java.util.List;
 
 import com.api.library.domain.service.IContactService;
-import com.api.library.exception.BadRequestException;
 import org.springframework.web.bind.annotation.GetMapping;
+import com.api.library.exception.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

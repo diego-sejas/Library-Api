@@ -1,9 +1,10 @@
 package com.api.library.mapper;
 
-import com.api.library.domain.model.Contact;
 import com.api.library.dto.ContactDTO;
+import com.api.library.domain.model.Contact;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;

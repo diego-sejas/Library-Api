@@ -1,14 +1,12 @@
 package com.api.library.domain.service.impl;
 
-import com.api.library.domain.model.Contact;
 import com.api.library.domain.service.IContactService;
 import com.api.library.dto.ContactDTO;
 import com.api.library.exception.NotFoundException;
-
+import com.api.library.domain.model.Contact;
 import com.api.library.domain.repository.ContactRepository;
 import com.api.library.mapper.ContactMapper;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

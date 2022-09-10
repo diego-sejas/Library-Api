@@ -1,20 +1,17 @@
 package com.api.library.auth.service.impl;
 
 import com.api.library.auth.config.SecurityConfiguration;
-
-
 import com.api.library.auth.dto.AuthenticationRequest;
 import com.api.library.auth.dto.AuthenticationResponse;
 import com.api.library.auth.dto.UserRequestDto;
 import com.api.library.auth.dto.UserResponseDto;
 import com.api.library.auth.service.JwtUtils;
-import com.api.library.domain.model.Role;
-import com.api.library.domain.model.UserEntity;
 import com.api.library.enums.RolName;
 import com.api.library.exception.ConflictException;
 import com.api.library.exception.ForbiddenException;
 import com.api.library.mapper.UserMapper;
-
+import com.api.library.domain.model.Role;
+import com.api.library.domain.model.UserEntity;
 import com.api.library.domain.repository.RoleRepository;
 import com.api.library.auth.repository.UserRepository;
 import com.api.library.domain.service.IEmailService;
