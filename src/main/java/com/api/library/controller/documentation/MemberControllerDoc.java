@@ -1,5 +1,6 @@
 package com.api.library.controller.documentation;
 
+import com.api.library.dto.MemberDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
